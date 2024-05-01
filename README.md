@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hello my name is Simon and I like to do codings 👋
 <!--
 CREATE TABLE default.person (
   first_name STRING,
@@ -21,7 +21,8 @@ INSERT INTO person
   location,
   blurb,
   skills,
-  interests)
+  interests,
+  urls)
 VALUES      
   ('Simon',
   'Engelbert',
