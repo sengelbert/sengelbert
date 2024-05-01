@@ -1,16 +1,47 @@
 ### Hi there 👋
-
 <!--
-**sengelbert/sengelbert** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+CREATE TABLE default.person (
+  first_name STRING,
+  last_name STRING,
+  gender STRING,
+  location STRING,
+  blurb STRING,
+  skills ARRAY,
+  interests ARRAY,
+  urls ARRAY
+);
 -->
+```sql
+-- Bootstrapping Simon Engelbert
+
+INSERT INTO person
+  (first_name,
+  last_name,
+  gender,
+  location,
+  blurb,
+  skills,
+  interests)
+VALUES      
+  ('Simon',
+  'Engelbert',
+  'Male',
+  'Colorado',
+  'Data & DevOps leader with expertise in innovation, complex problem-solving, and building high-performing engineering teams',
+  ARRAY_CONSTRUCT
+    ('Leadership',
+    'Data',
+    'DevOps',
+    'Software Engineering'),
+  ARRAY_CONSTRUCT
+    ('Linux',
+    'Android',
+    'AI',
+    'DeFi',
+    'Fitness',
+    'Food'),
+  ARRAY_CONSTRUCT
+    ('https://simonengelbert.com/',
+    'https://www.linkedin.com/in/simonengelbert/')  
+  );
+```
