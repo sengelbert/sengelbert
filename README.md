@@ -8,7 +8,7 @@ CREATE TABLE default.person (
   blurb STRING,
   skills ARRAY,
   interests ARRAY,
-  urls ARRAY
+  interwebs ARRAY
 );
 -->
 ```sql
@@ -22,7 +22,7 @@ INSERT INTO person
   blurb,
   skills,
   interests,
-  urls)
+  interwebs)
 VALUES      
   ('Simon',
   'Engelbert',
